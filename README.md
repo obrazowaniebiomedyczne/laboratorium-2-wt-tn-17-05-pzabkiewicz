@@ -8,7 +8,7 @@ Przekształcenia morfologiczne są jednymi z ważniejszych operacji przetwarzani
 
 Operacje morfologiczne potrzebują dwóch wejść - obrazu, który ma zostać przetworzony oraz elementu strukturalnego lub jądra. Elementem strukturalnym może być dowolny kształt z oznaczonym punktem centralnym. 
 
-![1541513558527](C:\Users\abuk9\AppData\Roaming\Typora\typora-user-images\1541513558527.png)
+![](figures/struct.png)
 
 Wykorzystywane jest to jako okno, do skanowania przetwarzanego obrazu punkt po punkcie. Podobnie jest z jądrem, które w uproszczeniu można potraktować jako macierz/tablicę. Taki element przechodzi po całym obrazie i dla każdego punktu dokonuje porównania punktów obrazu z punktami elementu strukturalnego. W przypadku wykrycia zgodności elementu strukturalnego z punktami na obrazie dokonywana jest pewna operacja na badanym punkcie. Podstawowe operacje morfologiczne to erozja i dylatacja. 
 
@@ -50,13 +50,13 @@ Zadanie polega na praktycznym zastosowaniu przekształceń morfologicznych. Star
 
 Każdego roku skanowałem to zdjęcie po to, aby zobaczyć jakie powstają zniszczenia w czasie:
 
-1. ![](.\figures\crushed.png)
+1. ![](figures/crushed.png)
 
-2. ![](.\figures\crushed2.png)
+2. ![](figures/crushed2.png)
 
-3. ![](.\figures\crushed3.png)
+3. ![](figures/crushed3.png)
 
-4. ![](.\figures\crushed4.png)
+4. ![](figures/crushed4.png)
 
 Wasze zadanie polega na tym, żeby uzyskać efekt najbardziej zbliżony do oryginału z tych 4 zniszczonych obrazów. Należy do tego wykorzystać różne operacje morfologiczne wykonywane w odpowiednich kolejnościach i ustawieniach. Do tego zadania można wykorzystać tylko operacje morfologiczne z biblioteki openCV i scikit-image. Rezultaty proszę zapisać do katalogu `results`.
 
